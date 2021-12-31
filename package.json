@@ -15,6 +15,7 @@
     "build": "tsdx build",
     "test": "tsdx test",
     "lint": "tsdx lint",
+    "commit": "git-cz",
     "prepare": "tsdx build",
     "size": "size-limit",
     "analyze": "size-limit --why",
@@ -46,15 +47,21 @@
   ],
   "devDependencies": {
     "@size-limit/preset-small-lib": "^7.0.5",
+    "cz-conventional-changelog": "^3.3.0",
     "husky": "^7.0.4",
+    "semantic-release": "^18.0.1",
     "size-limit": "^7.0.5",
     "tsdx": "^0.14.1",
     "tslib": "^2.3.1",
-    "typescript": "^3.9.10",
-    "semantic-release": "^18.0.1"
+    "typescript": "^3.9.10"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/tejinder-pal-singh/whatsappDM.git"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
